@@ -33,7 +33,7 @@ func HealthzHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-
+    log.Println("frontend-cokies runing")
     http.HandleFunc("/healthz", HealthzHandler)
 
     http.HandleFunc("/api/random", func (w http.ResponseWriter, r *http.Request) {
